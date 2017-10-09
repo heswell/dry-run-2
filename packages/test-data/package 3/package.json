@@ -1,0 +1,22 @@
+{
+  "bundledDependencies": false,
+  "name": "@heswell/test-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/test-data.js",
+  "module": "index.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "README.md",
+    "index.js",
+    "dist/"
+  ],
+  "devDependencies": {
+    "rollup": "^0.50.0"
+  }
+}

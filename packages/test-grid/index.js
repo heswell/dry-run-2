@@ -1,0 +1,1 @@
+export {default as Gris} from './src/grid';

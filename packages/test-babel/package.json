@@ -1,0 +1,25 @@
+{
+  "name": "@heswell/test-babel",
+  "version": "1.0.0",
+  "description": "Test Babel",
+  "main": "index.js",
+  "scripts": {
+    "css": "find ./src -name '*.css' -print | cpio -pdm ./generated",
+    "ts": "tsc",
+    "build": "npm run ts && npm run css && rollup -c --environment BUILD:production",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "README.md",
+    "index.js",
+    "dist/"
+  ],
+  "devDependencies": {
+    "rollup": "^0.50.0",
+    "rollup-plugin-postcss": "^0.5.5",
+    "typescript": "^2.5.3"
+  }
+}

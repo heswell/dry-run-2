@@ -1,0 +1,78 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ] }
+2 verbose rootPath /Users/steve/git/heswell/dry-run-2
+3 info version 2.3.1
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/steve/git/heswell/dry-run-2/VERSION
+7 silly initialize attempt
+8 info current version 0.0.0
+9 silly getUpdates
+10 info Checking for updated packages...
+11 silly hasTags
+12 verbose hasTags false
+13 info Comparing with initial commit.
+14 verbose updated @heswell/test-babel
+15 verbose updated @heswell/test-data
+16 verbose updated @heswell/test-grid
+17 verbose updated test-layout
+18 silly collectDependents
+19 silly isPackageDependentOf @heswell/test-babel @heswell/test-babel
+20 silly isPackageDependentOf @heswell/test-babel @heswell/test-data
+21 silly isPackageDependentOf @heswell/test-babel @heswell/test-grid
+22 silly isPackageDependentOf @heswell/test-babel test-layout
+23 silly isPackageDependentOf @heswell/test-data @heswell/test-babel
+24 silly isPackageDependentOf @heswell/test-data @heswell/test-data
+25 silly isPackageDependentOf @heswell/test-data @heswell/test-grid
+26 silly isPackageDependentOf @heswell/test-data test-layout
+27 silly isPackageDependentOf @heswell/test-grid @heswell/test-babel
+28 silly isPackageDependentOf @heswell/test-data @heswell/test-babel
+29 silly isPackageDependentOf @heswell/test-grid @heswell/test-data
+30 verbose dependent @heswell/test-grid depends on @heswell/test-data
+31 silly isPackageDependentOf @heswell/test-grid @heswell/test-grid
+32 silly isPackageDependentOf @heswell/test-data @heswell/test-grid
+33 silly isPackageDependentOf @heswell/test-grid test-layout
+34 silly isPackageDependentOf @heswell/test-data test-layout
+35 silly isPackageDependentOf test-layout @heswell/test-babel
+36 silly isPackageDependentOf test-layout @heswell/test-data
+37 silly isPackageDependentOf test-layout @heswell/test-grid
+38 silly isPackageDependentOf test-layout test-layout
+39 silly collectUpdates
+40 verbose has filtered update @heswell/test-babel
+41 verbose has filtered update @heswell/test-data
+42 verbose has filtered update @heswell/test-grid
+43 verbose has filtered update test-layout
+44 silly initialize success
+45 silly execute attempt
+46 silly isDetachedHead
+47 silly getCurrentBranch
+48 error execute Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+48 error execute Use '--' to separate paths from revisions, like this:
+48 error execute 'git <command> [<revision>...] -- [<file>...]'
+48 error execute
+48 error execute     at Function.module.exports.sync (/Users/steve/.npm-packages/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
+48 error execute     at Function.execSync (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+48 error execute     at Function.getCurrentBranch (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/GitUtilities.js:183:59)
+48 error execute     at Function.isDetachedHead (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/GitUtilities.js:37:37)
+48 error execute     at PublishCommand.execute (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/commands/PublishCommand.js:274:55)
+48 error execute     at PublishCommand._attempt (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:327:21)
+48 error execute     at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:314:16
+48 error execute     at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:346:13
+48 error execute     at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/commands/PublishCommand.js:564:11
+48 error execute     at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/PromptUtilities.js:38:9
+48 error execute  callback with error
+48 error execute  { Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+48 error execute Use '--' to separate paths from revisions, like this:
+48 error execute 'git <command> [<revision>...] -- [<file>...]'
+48 error execute
+48 error execute     at Function.module.exports.sync (/Users/steve/.npm-packages/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
+48 error execute     at Function.execSync (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+48 error execute     at Function.getCurrentBranch (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/GitUtilities.js:183:59)
+48 error execute     at Function.isDetachedHead (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/GitUtilities.js:37:37)
+48 error execute     at PublishCommand.execute (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/commands/PublishCommand.js:274:55)
+48 error execute     at PublishCommand._attempt (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:327:21)
+48 error execute     at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:314:16
+48 error execute     at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:346:13
+48 error execute     at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/commands/PublishCommand.js:564:11
+48 error execute     at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/PromptUtilities.js:38:9
+48 error execute   stack: 'Error: fatal: ambiguous argument \'HEAD\': unknown revision or path not in the working tree.\nUse \'--\' to separate paths from revisions, like this:\n\'git <command> [<revision>...] -- [<file>...]\'\n\n    at Function.module.exports.sync (/Users/steve/.npm-packages/lib/node_modules/lerna/node_modules/execa/index.js:303:26)\n    at Function.execSync (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)\n    at Function.getCurrentBranch (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/GitUtilities.js:183:59)\n    at Function.isDetachedHead (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/GitUtilities.js:37:37)\n    at PublishCommand.execute (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/commands/PublishCommand.js:274:55)\n    at PublishCommand._attempt (/Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:327:21)\n    at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:314:16\n    at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/Command.js:346:13\n    at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/commands/PublishCommand.js:564:11\n    at /Users/steve/.npm-packages/lib/node_modules/lerna/lib/PromptUtilities.js:38:9' }

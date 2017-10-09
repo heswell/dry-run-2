@@ -1,0 +1,25 @@
+{
+  "name": "@heswell/test-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "index.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "README.md",
+    "index.js",
+    "dist/"
+  ],
+  "dependencies": {
+    "@heswell/test-data": "1.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^0.50.0"
+  }
+}

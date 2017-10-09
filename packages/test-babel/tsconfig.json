@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "noEmitOnError": true,
+    "jsx": "react",
+    "target": "es6",
+    "lib": ["dom", "es6"],
+    "module": "es6",
+    "allowJs": true,
+    "outDir": "generated"
+  },
+  "include": [
+    "index.js"
+  ],
+  "exclude":[
+    "node_modules"
+  ]
+}
