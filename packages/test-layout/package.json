@@ -1,6 +1,6 @@
 {
   "name": "test-layout",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "index.js",
@@ -17,6 +17,5 @@
   ],
   "devDependencies": {
     "rollup": "^0.50.0"
-  },
-  "dependencies": {}
+  }
 }

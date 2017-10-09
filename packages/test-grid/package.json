@@ -1,6 +1,6 @@
 {
   "name": "@heswell/test-grid",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "index.js",
@@ -17,7 +17,7 @@
     "dist/"
   ],
   "dependencies": {
-    "@heswell/test-data": "1.0.0"
+    "@heswell/test-data": "^0.0.1"
   },
   "devDependencies": {
     "rollup": "^0.50.0"

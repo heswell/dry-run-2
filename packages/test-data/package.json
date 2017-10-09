@@ -1,6 +1,6 @@
 {
   "name": "@heswell/test-data",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Test Data",
   "main": "dist/test-data.js",
   "module": "index.js",
